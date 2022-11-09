@@ -10,7 +10,13 @@
 nav {
 	height: 60px;
 	width: 100%;
-	background-color: #61d4bb;
+	background-color: #79a9f9;
+	
+	
+}
+
+.formlogin{
+	border-radius: 10px;
 }
 
 label.logo {
@@ -28,8 +34,9 @@ label.logo {
 
 .navbar-brand img {
     margin-left: 20px;
-    height: 60px;
+    height: 60px;ы
 }
+
 nav ul {
 	float: right;
 	margin-right: 40px;

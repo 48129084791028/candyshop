@@ -7,32 +7,117 @@
 }
 
 
+.HeroCarousel .slick-dots {
+    white-space: nowrap
+}
+
+@media (max-width:47.9375rem) {
+    .HeroCarousel .slick-dots li button {
+        width: auto;
+        height: auto;
+        padding: .5rem
+    }
+}
+
+@media (max-width:47.9375rem) {
+    .HeroCarousel-arrowContainer {
+        height: 1.75rem;
+        padding: 0
+    }
+
+    .HeroCarousel-arrowContainer--prev {
+        left: -1rem;
+        padding-top: .1875rem;
+        padding-left: .1875rem
+    }
+
+    .HeroCarousel-arrowContainer--next {
+        right: -.9375rem;
+        padding-top: .1875rem;
+        padding-right: .1875rem
+    }
+}
 
 #content {
-    min-height: 600px;
+    min-height: 800px;
     width: 100%;
     margin: 0 auto;
+    background-image: url("../imgs/carusel2.jpeg");
+}
+
+.registrationbtn {
+    margin-left: 167px;
+    margin-top: -34px;
+    color: #7c9ab7;
+    width: 150px;
 }
 
 
+.registrationbtn:after {
+    background-color: #79a9f9;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.registrationbtn:hover:after,
+.registrationbtn:focus:after {
+    width: 100%;
+}
+
+.registrationbtn1 {
+    margin-left: 201px;
+    margin-top: -34px;
+    color: #7c9ab7;
+    width: 135px;
+}
+
+
+.registrationbtn1:after {
+    background-color: #79a9f9;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.registrationbtn1:hover:after,
+.registrationbtn1:focus:after {
+    width: 100%;
+}
 
 .categories {
     font-family: 'VAG Round Cyrillic';
-    font-size:16px;font-style:normal;
+    font-size: 16px;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
+
     -moz-osx-font-smoothing: grayscale;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 100%;
+    padding-top: 29px;
+    padding-bottom: 20px;
 }
+
+
+
 
 .catPhoto {
     margin: auto;
     width: 150px;
     height: 150px;
 }
+
+
 
 .catName {
     font-family: 'VAG Round Cyrillic';
@@ -41,32 +126,59 @@
     text-align: center;
     color: #000;
 }
+
 .catName p {
     height: 40px;
     vertical-align: top;
 }
-.cardCat:hover p{
+
+.cardCat:hover p {
     color: red;
 }
+
 .cardCat:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,10);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    transition: all 1s ease;
 }
+
+
 .mainBlockContent {
-    font-family: 'VAG Round Cyrillic';
+        font-family: 'VAG Round Cyrillic';
     padding-top: 10px;
-    margin-top: 20px;
+    margin: 2%;
     padding-left: 70px;
     padding-right: 70px;
-    width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    background-color: white;
 
 }
-.HeadCatList h2{
+
+.mainBlockContent1 {
+    font-family: 'VAG Round Cyrillic';
+    padding-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    margin-bottom: 2%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    text-align: center;
+
+}
+
+
+
+.HeadCatList h2 {
     font-size: 25px;
     height: 30px;
 
 }
+
 .HeadCatList a {
     padding-top: 10px;
     width: 250px;
@@ -76,7 +188,10 @@
 
 .HeadCatList {
         display: flex;
-        align-content: flex-end;
+    align-content: flex-end;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .title1 {
@@ -84,6 +199,7 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 .HeadCatList p {
     width: 100%;
 }
@@ -95,19 +211,31 @@
     margin-bottom: 20px;
 
 }
+
 .text {
     font-size: 15px;
     color: #808080;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
+.text1 {
+    font-size: 18px;
+    color: black;
+    padding-bottom: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text1 p{
+    text-align: left;
+}
+
 .textLi {
     font-size: 15px;
     color: #808080;
     margin-bottom: 20px;
     padding-left: 30px;
 }
-
-
-
-
-			

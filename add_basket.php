@@ -37,7 +37,7 @@ if ($addr != null){
 }
 } else {
     $_SESSION['message'] = 'Для оформления заказа авторизуйтесь!';
-    header("Location: index.php?page=profile");
+    header("Location: index.php?page=login");
 }
 
 

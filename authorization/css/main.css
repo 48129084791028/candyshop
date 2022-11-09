@@ -6,6 +6,28 @@
     padding: 0;
 }
 
+.addresspage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.show{
+    z-index: 10000;
+}
+
+.change_table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 493px;
+    font-size: 20px;
+}
+
+
+
 .user_orders{
     font-family: 'VAG Round Cyrillic', serif;
     font-size: 40px;
@@ -13,37 +35,164 @@
     font-weight: 500;
 }
 
+
+
 .tableProfile{
     width: 78%;
     margin-right: 11%;
     margin-left: 11%;
-    border: 2px solid #000;
+    border: 2px solid #79a9f9;
+    background-color: white;
+    border-radius: 38px;
+    margin-bottom: 82px;
+}
+
+.tableProfile1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+        margin-bottom: 15%;
+    margin-top: 10%;
+    border: 2px solid #79a9f9;
+    background-color: white;
+    border-radius: 38px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tableProfile2{
+        margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50%;
+    padding-bottom: 27px;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    border: 2px solid #79a9f9;
+    background-color: white;
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 a {
-    color: #7c9ab7;
-    font-weight: bold;
+    color: #4a4a4a;
+    
     text-decoration: none;
 }
 
-.avtor p {
+
+
+.avtorlog p {
     margin: 10px 0;
     font-family: 'VAG Round Cyrillic', serif;
 }
 
-.avtor form {
-    font-family: 'VAG Round Cyrillic', serif;
+.avtorlog form {
+        font-family: 'VAG Round Cyrillic', serif;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 342px;
+    margin-top: 31px;
+    border: 2px solid #79a9f9;
+    border-radius: 24px;
+    padding-left: 17px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: white;
 }
 
-.avtor input {
+.avtorlog input {
     font-family: 'VAG Round Cyrillic', serif;
     margin: 10px 0;
     padding: 10px;
     border: unset;
     border-bottom: 2px solid #e3e3e3;
     outline: none;
+}
+
+.avtorlog button {
+    padding: 10px;
+    font-family: 'VAG Round Cyrillic', serif;
+    font-size: 18px;
+    color: #79a9f9;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.avtorlog button:hover {
+
+        background-color: #79a9f9;
+        color: white;
+        transition: all 1s ease;
+    }
+
+.avtorlog{
+    height: 70vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.avtorreg p {
+    margin: 10px 0;
+    font-family: 'VAG Round Cyrillic', serif;
+}
+
+.avtorreg form {
+        font-family: 'VAG Round Cyrillic', serif;
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    margin-top: 31px;
+    border: 2px solid #79a9f9;
+    border-radius: 24px;
+    padding-left: 17px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.avtorreg input {
+    font-family: 'VAG Round Cyrillic', serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+.avtorreg button {
+    padding: 10px;
+    font-family: 'VAG Round Cyrillic', serif;
+    font-size: 18px;
+    color: #79a9f9;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.avtorreg button:hover {
+
+        background-color: #79a9f9;
+        color: white;
+        transition: all 1s ease;
+    }
+
+.avtorreg{
+    height: 70vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
 }
 
 .user_profile form {
@@ -57,29 +206,44 @@ a {
     font-weight: 500;
 }
 
-.avtor button {
-    padding: 10px;
-    background: #e3e3e3;
-    border: unset;
-    cursor: pointer;
-}
+
+
+
 
 .msg {
-    border: 2px solid #ffa908;
-    border-radius: 3px;
-    padding: 10px;
+    border: 2px solid #79a9f9;
+    display: flex;
+    border-radius: 27px;
+    padding: 14px;
     text-align: center;
     font-weight: bold;
+    background-color: white;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -22px;
+}
+
+.msg1 {
+    border: 2px solid #79a9f9;
+    display: flex;
+    border-radius: 27px;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .logout {
     color: #b7625c;
 }
-.avtor{
-    height: 70vh;
-    display: flex;
-    margin: 100px;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat, sans-serif;
-}
+

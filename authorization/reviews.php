@@ -10,7 +10,7 @@ $user_id = $_SESSION['user']['id'];
             }unset($_SESSION['message4']);
 ?>
 <form action="authorization/reviews_add.php" method="POST">
-    <div class="user_profile">
+    <div class="tableProfile2">
         <center>
            <div style="text-align: center;">
                <div style="text-align: center;">

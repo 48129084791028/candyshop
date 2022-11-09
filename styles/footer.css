@@ -6,10 +6,13 @@
     font-style: normal;
 }
 
-
+*{
+	font-family: 'VAG Round Cyrillic', serif;
+}
 
 *, *:before, *:after {
 	box-sizing: border-box;
+
 }
 
 body {
@@ -31,7 +34,28 @@ body {
 .footer > * {
 	flex:  1 100%;
 }
-
+.btnbuy a{
+    display: inline-block;
+    color: black;
+    line-height: 1;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btnbuy a:after {
+    background-color: #79a9f9;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.btnbuy a:hover:after,
+.btnbuy a:focus:after {
+    width: 100%;
+}
 .l-footer {
 
 	margin-right: 1.25em;

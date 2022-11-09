@@ -17,7 +17,7 @@ if ( ! isset($_SESSION)) {
                 <table>
                     <tr>
                         <td></td>
-                        <td><b>Название блюда</b></td>
+                        <td><b>Название</b></td>
                         <td><b>Количество</b></td>
                         <td><b>Цена за шт.</b></td>
                         <td><b>Итого</b></td>
@@ -90,8 +90,11 @@ if ( ! isset($_SESSION)) {
                         
                         <tr>
                             <td></td>
-                            <td align="right" colspan="5"><b> <a
-                                href="add_basket.php">Оформить заказ</a></b>
+                            <td align="right" colspan="5"><b> 
+                                <div class="btnbuy">
+
+                                <a
+                                href="add_basket.php">Оформить заказ</a></div></b>
                             </td>
                         </tr>
                     </table>
@@ -102,27 +105,29 @@ if ( ! isset($_SESSION)) {
 
     <footer class="footer">
        <div class="l-footer">
-          <h1>PopFood</h1>
+          <h1>О нас</h1>
           <p>
-             PopFood.ru дает вам возможность заказать пиццу и суши в городе Нижний Новгород, не выходя из дома.
-             Наши повара рады приготовить для вас любое блюдо из меню, и вы сможете насладиться великолепным вкусом и ароматом!
+             В нашем магазине вы найдете многообразие европейских сладостей, 
          </p>
+         <p>представленных брендами Oreo, Milka, Nutella, Nestle, Twix, KitKat и другими марками.</p>
      </div>
      <ul class="r-footer">
          <li class="footerInfo">
             <ul class="box">
 
                <li><a href="index.php?page=index">Главная</a></li>
-               <li><a href="index.php?page=shop">Меню</a></li>
+               <li><a href="index.php?page=shop">Ассортимент</a></li>
                <li><a href="index.php?page=profile">Личный кабинет</a></li>
                <li> </li>
            </ul>
        </li>
        <li class="features">
         <ul class="box h-box">
-           <li> <i class="iconNav fa-solid fa-at"></i> popfood@gmail.com</li>
-           <li> <i class="iconNav fa-solid fa-phone"></i> 8 800 555 00 00</li>
-           <li> <i class="iconNav fa-solid fa-location-dot"></i> г. Нижний Новгород, ул. Максима Горького , д. 154</li>
+           <li> <i class="iconNav fa-solid fa-at"></i> Liveinsugar@gmail.ru</li>
+           <li> <i class="iconNav fa-solid fa-phone"></i> 8(800)707-67-42</li>
+           <li> <i class="iconNav fa-solid fa-location-dot" style="
+    padding-left: 3px;
+"></i> Никольская ул., 10/2с2Б</li>
 
        </ul>
    </li>
@@ -130,8 +135,13 @@ if ( ! isset($_SESSION)) {
 </ul>
 <div class="b-footer">
  <p>
- All rights reserved by ©PopFood 2022 </p>
+ All rights reserved by ©Жизнь в Сладость 2022 </p>
 </div>
 </footer>
+<?php 
+
+    $title="$index_tit";
+    ?>
+    <title><?php echo $title; ?></title>
 </body>
 </html>

@@ -1,5 +1,6 @@
-<h1 class="catLogo">Каталог товаров
-	<?php
+
+
+<h1 class="catLogo">Каталог товаров<?php
 	if (!isset($_GET['id_cat'])) {
 
 	} else {
@@ -8,7 +9,7 @@
 		$cat = $_GET['id_cat'];
 		$sql_cat=$link->query("SELECT `name` FROM `categories` WHERE `id`= $cat");
 		foreach ($sql_cat as $cat):
-			echo " → ".$cat['name'];
+			echo "/".$cat['name'];
 		endforeach;
 	}
 	if (array_key_exists('message1', $_SESSION)) {
@@ -35,7 +36,7 @@
 		<div class="right_nav">
 			<div class="sort">
 				<form action="">
-					Сортировка
+					
 					<select onchange="location=value">
 						<option value="" selected="selected">Сортировка по имени</option>
 						<option value="index.php?page=sort&id_sort=1">А-Я</option>
@@ -55,26 +56,24 @@
 			<?php foreach ($sql as $good): ?>
 				<div class="shopUnit">
 					<div class="imageProd">
-						<a href="index.php?page=openProduct&id=<?php echo $good['id'] ?>" class="shopUnitMore"><img  width="200px" height="200px" src="<?php echo $good['imgs']; ?>"alt=""> </a> 
+						<a href="index.php?page=openProduct&id=<?php echo $good['id'] ?>" class="shopUnitMore"><img  width="250px" height="250px" src="<?php echo $good['imgs']; ?>"alt=""> </a> 
 					</div>
 					<div class="chatacteristicsShop">
-						<div class="name">
+						<a href="index.php?page=openProduct&id=<?php echo $good['id'] ?>" class="shopUnitMore"><div class="name" >
 							<?php echo $good['name'] ?>
-						</div>
+						</div></a> 
 
 						<div class="manufacturer">
 							<?php echo $good['comp'] ?>
 						</div>
-						<div class="weight">
-							<?php echo $good['weight'] ?>
-						</div>
+						
 					</div>
 
 					<!-- отображение цены товара -->
-					<div class="price" style=" width: 100%; display:flex; justify-content: space-between;"><h4>
+					<div class="price"><h4>
 						<?php
 						$price = $good['price'];
-						echo '<a class="Price"> '.$good['price'].'₽ </a>';
+						echo '<a class="Price"> '.$good['price'].'₽/шт </a>';
 						?>
 					</h4>
 

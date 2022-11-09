@@ -8,12 +8,14 @@ $id_user = $_SESSION['user']['id'];
 require_once 'connect.php';
 $id_addr = $_POST['id_addr'];
 ?>
+<div class="addresspage">
+    <div class="tableProfile2">
 <form>
-    <div class="user_profile">
+    
      <form action="authorization/handler_form/logout.php">
-         <div style="display: flex;">
+         
              <div style="margin: 20px;">
-                 <a style="margin: 10px 0;" href="">Выбрать адрес доставки:</a>
+                 <a style="margin: 10px 0;" >Выбрать адрес доставки:</a>
                  <p style="margin: 10px 0;"></p>
                  <?php  
                  $sql_address = $link->query("SELECT * FROM `address` WHERE `id_user`= '$id_user'");
@@ -50,27 +52,27 @@ $id_addr = $_POST['id_addr'];
                         <?php endforeach ?>
                     </select></td>
                 </div>
-            </div>
-        </div>
+            
+        
     </form>
     <form action="authorization/address_add.php" method="POST">
-        <div class="address_card">
-         <div style="display: flex;">
-             <div style="margin: 20px;">         
-                 <a style="margin: 10px 0;" href="">Добавить новый адрес доставки:</a>
-                 <p style="margin: 10px 0;">Название: </p>
-                 <input type="text" name="name_adr" maxlength="20" placeholder="Дом">             
-                 <p style="margin: 10px 0;">Адрес: </p>
-                 <textarea name="address" rows="10" cols="50" minlength="10" maxlength="35" placeholder="Улица, дом, корпус, квартира"></textarea>
+        
+         
+             <div>         
+                 <a style="margin: 10px 0;" >Добавить новый адрес доставки:</a>
+                        
+                 <p style="margin: 10px 0;"></p>
+                 <textarea name="address" rows="3" cols="40" minlength="10" maxlength="35" placeholder="Улица, дом, корпус, квартира"></textarea>
                  <p></p>
-                 <button type="submit" name="save">Добавить</button>
+                 <button class="add_to_cart" type="submit" name="save">Добавить</button>
                  <a href="index.php?page=profile">Назад</a>
                  <div align="center" style="margin-top: 10px;">
                  </div>           
              </div>
-         </div>
-     </div>
+       
+     
  </form>
-
+ </div>
+</div>
 
  

@@ -85,7 +85,7 @@ if (!isset($_GET['delida'])){
                     ?>
                     <tr>
                         <td><img width="50px" height="50px" src="<?php echo $good_m['imgs']; ?>" /></td>
-                        <td><?php  echo $good_u['login']; ?></td>
+                        <td><?php  echo $good_u['email']; ?></td>
                         <td><?php  echo $good_m['name']; ?></td>
                         <td> <?php echo $kol; ?> </td>
                         <td><?php echo $good_m['price'] . 'р'; ?></td>

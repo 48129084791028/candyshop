@@ -4,14 +4,13 @@ session_start();
 
 // подключение к БД и выборка из таблицы пользователи данных, которые соответствуют введенным
 require_once '../../connect.php';
-$login      = $_POST['login'];
+$email      = $_POST['email'];
 $password   = md5($_POST['password']);
-$check_user = mysqli_query($link, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'");
+$check_user = mysqli_query($link, "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password'");
 if (mysqli_num_rows($check_user) > 0) {
     $user             = mysqli_fetch_assoc($check_user);
     $_SESSION['user'] = [
         "id"        => $user['id'],
-        "login"      => $user['login'],
         "name"      => $user['name'],
         "email"     => $user['email'],
         "phone"     => $user['phone'],

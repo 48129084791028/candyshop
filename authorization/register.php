@@ -8,12 +8,11 @@ if (array_key_exists('user', $_SESSION)) {
     exit();
 }
 ?>
-<div class="avtor">
+<div class="avtorregphoto">
+<div class="avtorreg">
     <form action="authorization/handler_form/signup.php" method="post" enctype="multipart/form-data">
         <label>Имя</label>
         <input type="text" name="full_name" minlength="3" maxlength="12" required placeholder="Имя">
-        <label>Логин</label>
-        <input type="text" name="login" minlength="4" maxlength="12" required placeholder="Логин">
         <label>Почта</label>
         <input type="email" name="email" minlength="8" maxlength="30" required placeholder="ivanov@mail.ru">
         <label>Телефон</label>
@@ -24,7 +23,7 @@ if (array_key_exists('user', $_SESSION)) {
         <input type="password" name="password_confirm" minlength="4" maxlength="20" required placeholder="Подтвердите пароль">
         <button type="submit">Зарегистрироваться</button>
         <p>
-            У вас уже есть аккаунт? - <a href="index.php?page=login">авторизируйтесь!</a>
+            У вас уже есть аккаунт? - <div class="registrationbtn1"><a href="index.php?page=login">Авторизируйтесь!</a></div>
         </p>
         <?php
         // сообщение об ошибке
@@ -34,5 +33,6 @@ if (array_key_exists('user', $_SESSION)) {
         unset($_SESSION['message']);
         ?>
     </form>
+</div>
 </div>
 

@@ -23,7 +23,7 @@
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	
-	<link rel="shortcut icon" href="/imgs/icon.ico" type="image/x-icon">
+	<link rel="icon" href="/imgs/icon.png" type="image/png" />
 	
 	<script>
 		$(document).ready(function(){
@@ -32,14 +32,19 @@
 			});
 		});
 	</script>
-	<title>PopFood</title>
+
+	<?php 
+
+    $title="$index_tit";
+    ?>
+
 </head>
 <body>
 	<nav>
-		<a class="navbar-brand" href="index.php?page=index"><img src="imgs/logo1.jpg" alt=" " class="d-inline-block align-text-bottom "></a>
+		<a class="navbar-brand" href="index.php?page=index"><img src="imgs/logo1.png" alt=" " class="d-inline-block align-text-bottom "></a>
 		<ul>
 			<li><a class="headerA" href="index.php?page=index"><i class="iconNav fa-solid fa-house"></i>Главная</a></li>
-			<li><a class="headerA" href="index.php?page=shop"><i class="iconNav fa-solid fa-shop"></i>Меню</a></li>
+			<li><a class="headerA" href="index.php?page=shop"><i class="iconNav fa-solid fa-shop"></i>Ассортимент</a></li>
 			<li><a class="headerA" href="#openModal"> <i class="iconNav fa-solid fa-basket-shopping"></i> Корзина</a></li>
 			<li><a class="headerA" href="index.php?page=login"><i class="iconNav fa-solid fa-user"></i>Личный Кабинет</a></li>
 		</ul>
@@ -47,3 +52,18 @@
 			<i class="fas fa-bars"></i>
 		</label>
 	</nav>
+
+	<!--
+
+if ($_SESSION['user']) {
+  if ($_SESSION['user']['role'] == "0" || $_SESSION['user']['role'] == null) {
+    require '../authorization/profile.php';
+} else if ($_SESSION['user']['role'] == "1") {
+    require '../authorization/admin.php';
+}
+require 'templates/footer.php';
+
+} else {
+	require '../authorization/login.php';
+}
+ -->

@@ -2,13 +2,16 @@
 session_start();
 if (!$_SESSION['user']) {
   require 'authorization/login.php';
-  require 'footer.php';
+  require 'templates/footer.php';
   exit();
 }
+$index_tit="Личный кабинет";
 $id_user = $_SESSION['user']['id'];
 if (array_key_exists('message1', $_SESSION)) {
-    echo '<p class="msg"> ' . $_SESSION['message1'] . ' </p>';
+    echo '<p class="msg1"> ' . $_SESSION['message1'] . ' </p>';
+    
 }unset($_SESSION['message1']); 
+
 $sql_user = $link->query("SELECT * FROM `users` where `id`=$id_user");
 foreach ($sql_user as $user):
  ?>
@@ -25,11 +28,11 @@ foreach ($sql_user as $user):
 
                <p style="margin: 10px 0;">Номер телефона: <?php echo $user['phone']; ?></p>
 
-               <a href="index.php?page=change">Редактировать профиль</a>
+               <a style="color:#79a9f9;" href="index.php?page=change">Редактировать профиль</a>
                <p></p>
-               <a href="index.php?page=address">Выбор адреса</a>
+               <a style="color:#79a9f9;" href="index.php?page=address">Выбор адреса</a>
                <p></p>
-               <a href="index.php?page=reviews">Отзыв</a>
+               <a style="color:#79a9f9;" href="index.php?page=reviews">Отзыв</a>
 
                <div align="center" style="margin-top: 10px;">
                    <button class="logout custom-button" type="submit">Выйти</button>
@@ -41,10 +44,11 @@ foreach ($sql_user as $user):
 <?php endforeach ?>
 <form>
    <table class="tableProfile">
-    <h2 style="font-size: 40px;">Ваши Заказы</h2>
-    <tr>
+    <h2 style="font-size: 40px;color: white;border: 1px;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;text-align: center;">Ваши Заказы</h2>
+
+        <tr>
         <td></td>
-        <td style="font-size: 20px;"><b>Название блюда</b></td>
+        <td style="font-size: 20px;"><b>Название</b></td>
         <td style="font-size: 20px;"><b>Количество</b></td>
         <td style="font-size: 20px;"><b>Цена за шт.</b></td>
         <td style="font-size: 20px;"><b>Итого</b></td>
